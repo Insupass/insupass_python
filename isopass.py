@@ -1,5 +1,6 @@
-# Yu Gui   04/27/2016
-# Insupass
+# Yu Gui   12/05/2016
+# NYU Courant Institute of Mathematical Sciences
+# IsoPass
 
 import math
 import hashlib
@@ -61,7 +62,7 @@ def expand(s_input, i_target_len):
 
 
 # main function
-def __yg_main():
+def __ip_main():
     # receive hashing scheme
     l_argv = sys.argv
     try:
@@ -138,4 +139,4 @@ def __yg_main():
     print("Digest: ", s_result)
 
 
-__yg_main()
+__ip_main()
