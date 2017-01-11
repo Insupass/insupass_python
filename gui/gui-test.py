@@ -1,23 +1,20 @@
 #gui-test
-from Tkinter import Tk, Frame, BOTH
+import tkinter
+from tkinter import messagebox
 
-class Example(Frame):
-    def __init__(self, parent):
-        Frame.__init__(self, parent, background = "white")
 
-        self.parent = parent
-
-        self.initUI()
-
-    def initUI(self):
-        self.parent.title("Ex")
-        self.pack(fill=BOTH, expand = 1)
+def run_isopass():
+    messagebox.showinfo('Isopass', 'hello')
+    return()
 
 
 def main():
-    root = Tk()
-    root.geometry("250*150+300+300")
-    app = Example(root)
+    root = tkinter.Tk()
+    frame = tkinter.Frame(root)
+    b = tkinter.Button(root, text='run', command=run_isopass)
+    b.pack()
+    # root.geometry("400*300")
+    # app = Example(root)
     root.mainloop()
 
 
