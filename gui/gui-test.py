@@ -3,18 +3,30 @@ import tkinter
 from tkinter import messagebox
 
 
-def run_isopass():
-    messagebox.showinfo('Isopass', 'hello')
+
+def generate_pwd():
+    messagebox.showinfo('Isopass', str('hello' + app_pwd.get()))
     return()
 
 
 def main():
     root = tkinter.Tk()
-    frame = tkinter.Frame(root)
-    b = tkinter.Button(root, text='run', command=run_isopass)
-    b.pack()
-    # root.geometry("400*300")
-    # app = Example(root)
+    root.title('IsoPass')
+    root.geometry('300x400')
+
+    app_pwd = tkinter.StringVar()
+    master_pwd = tkinter.StringVar()
+    app_pwd_label = tkinter.Label(root, text='Application String')
+    app_pwd_entry = tkinter.Entry(root, textvariable=app_pwd)
+    master_pwd_label = tkinter.Label(root, text='Master Pwd')
+    master_pwd_entry = tkinter.Entry(root, textvariable=master_pwd)
+    generate_button = tkinter.Button(root, text='generate', command=generate_pwd)
+
+    app_pwd_label.pack()
+    app_pwd_entry.pack()
+    master_pwd_label.pack()
+    master_pwd_entry.pack()
+    generate_button.pack()
     root.mainloop()
 
 
