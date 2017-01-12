@@ -3,13 +3,13 @@ import tkinter
 from tkinter import messagebox
 
 
-
-def generate_pwd():
-    messagebox.showinfo('Isopass', str('hello' + app_pwd.get()))
-    return()
-
-
 def main():
+    def generate_pwd(*args):
+        app_pwd_str = app_pwd.get()
+        master_pwd_str = master_pwd.get()
+        messagebox.showinfo('Isopass', str('hello'+app_pwd_str+master_pwd_str))
+        return ()
+
     root = tkinter.Tk()
     root.title('IsoPass')
     root.geometry('300x400')
@@ -27,6 +27,9 @@ def main():
     master_pwd_label.pack()
     master_pwd_entry.pack()
     generate_button.pack()
+
+    root.bind('<Return>', generate_pwd)
+    app_pwd_entry.focus()
     root.mainloop()
 
 

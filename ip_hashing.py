@@ -61,8 +61,8 @@ def expand(s_input, i_target_len):
     return s_input
 
 
-# main function
-def __ip_main():
+# main hashing function
+def run_hash(*args):
     # receive hashing scheme
     l_argv = sys.argv
     try:
@@ -80,8 +80,11 @@ def __ip_main():
     # receive seeds
     # s_seed1 = "12"
     # s_seed2 = "34"
-    s_seed1 = str(input("Please input seed1: \n"))
-    s_seed2 = str(input("please input seed2: \n"))
+    # s_seed1 = str(input("Please input seed1: \n"))
+    # s_seed2 = str(input("please input seed2: \n"))
+
+    s_seed1 = args[0]
+    s_seed2 = args[1]
     s_input = s_seed1 + s_seed2
     s_result = s_input
 
@@ -135,8 +138,9 @@ def __ip_main():
             s_input = s_result
             s_result = base58_encode(s_input)
 
-    print("Length: ", len(s_result))
     print("Digest: ", s_result)
+    print("Length: ", len(s_result))
+
+    return s_result
 
 
-__ip_main()
