@@ -1,4 +1,4 @@
-#gui-test
+#ip_gui
 import tkinter
 from tkinter import messagebox
 
@@ -6,6 +6,9 @@ import ip_hashing
 
 
 def gui_main():
+    # func:
+    # generate password by calling ip_hashing module
+    # show password in a info message box
     def generate_pwd(*args):
         str_app_pwd = app_pwd.get()
         str_master_pwd = master_pwd.get()
@@ -13,26 +16,34 @@ def gui_main():
         messagebox.showinfo('Isopass', str_result)
         return ()
 
+    # create root window instance
     root = tkinter.Tk()
     root.title('IsoPass')
-    root.geometry('300x400')
 
+    # declare entry vars
     app_pwd = tkinter.StringVar()
     master_pwd = tkinter.StringVar()
-    app_pwd_label = tkinter.Label(root, text='Application String')
-    app_pwd_entry = tkinter.Entry(root, textvariable=app_pwd)
-    master_pwd_label = tkinter.Label(root, text='Master Pwd')
-    master_pwd_entry = tkinter.Entry(root, textvariable=master_pwd)
-    generate_button = tkinter.Button(root, text='generate', command=generate_pwd)
 
-    app_pwd_label.pack()
-    app_pwd_entry.pack()
-    master_pwd_label.pack()
-    master_pwd_entry.pack()
-    generate_button.pack()
+    # declare layout elements
+    label_slogan = tkinter.Label(root, text='Isopass')
+    label_app_pwd = tkinter.Label(root, text='Application String')
+    entry_app_pwd = tkinter.Entry(root, textvariable=app_pwd)
+    label_master_pwd = tkinter.Label(root, text='Master Pwd')
+    entry_master_pwd = tkinter.Entry(root, textvariable=master_pwd)
+    button_generate = tkinter.Button(root, text='generate', command=generate_pwd)
 
+    # place elements on the root window
+    label_slogan.grid(row=0, padx=10, pady=20)
+    label_app_pwd.grid(row=1, padx=10, pady=10)
+    entry_app_pwd.grid(row=2, padx=10, pady=0)
+    label_master_pwd.grid(row=3, padx=10, pady=10)
+    entry_master_pwd.grid(row=4, padx=10, pady=0)
+    button_generate.grid(row=5, padx=10, pady=10)
+
+    # some adjustments
     root.bind('<Return>', generate_pwd)
-    app_pwd_entry.focus()
+    entry_app_pwd.focus()
+
     root.mainloop()
 
 #init GUI
