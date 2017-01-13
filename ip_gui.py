@@ -1,8 +1,12 @@
-#ip_gui
-import tkinter
-from tkinter import messagebox
+# ip_gui.py
+# GUI for IsoPass using tkinter
+# Yu Gui    01/12/2017
+# NYU CIMS
 
 import ip_hashing
+
+import tkinter
+from tkinter import messagebox
 
 
 def gui_main():
@@ -25,7 +29,7 @@ def gui_main():
     master_pwd = tkinter.StringVar()
 
     # declare layout elements
-    label_slogan = tkinter.Label(root, text='Isopass')
+    label_slogan = tkinter.Label(root, text='IsoPass')
     label_app_pwd = tkinter.Label(root, text='Application String')
     entry_app_pwd = tkinter.Entry(root, textvariable=app_pwd)
     label_master_pwd = tkinter.Label(root, text='Master Pwd')
