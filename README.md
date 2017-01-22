@@ -20,14 +20,17 @@ IsoPass aim to be a secure and convenient password solution. IsoPass, as a passw
 -----
 ## Features
 
-1. ### Irreversible master password
-In cases where specific generated passwords are leaked and fallen into unwanted hands, you have the confidence in mind that your the attackers have no way to reverse engineer your master password. And you can save the hassle of changing all your passwords.    
+1. ### Open source  
+First and foremost, credibility is indispensable especially in security software. Thus, we open source all of the IsoPass libraries and distributions. Plus, according to GNU GPLv3, all derivatives of IsoPass must also disclose their source codes. Currently, the IsoPass library contains only 150 lines of codes. We encourage you to inspect the codes.
 
-2. ### No storage of sensitive information
-Insupass eliminates the need for storing password in a secure place. Insupass also eliminates the risk of password storage being compromised.   
+2. ### Irreversible master password  
+In cases where specific generated passwords are leaked and fallen into unwanted hands, you have the confidence that the attackers have no way to reverse engineer your master password. And you can save the hassle of changing all your passwords.    
 
-3. ### App-specific passwords
-For difference applications, IsoPass generate different passwords that are mathematically unrelated. Remembering only one master password, you can isolate your passwords. Have one million website logins to remember? No worry, IsoPass got you covered. You only need a master password.  
+3. ### No storage of sensitive information  
+IsoPass eliminates the need for storing password in a secure place. IsoPass also eliminates the risk of password storage being compromised.   
+
+4. ### App-specific passwords  
+For different applications, IsoPass generate different passwords that are mathematically unrelated. Remembering only one master password, you can isolate your passwords. Have one million website logins to remember? No worry, IsoPass got you covered. You only need a master password.  
 
 -----
 ## Planed Features (to be implementer in future updates)
