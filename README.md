@@ -14,6 +14,10 @@ Corresponding output of IsoPass:
 Then you can use the generated output as your gmail.com login password.
 
 -----
+## Philosophy
+IsoPass aim to be a secure and convenient password solution. IsoPass, as a password generator and manager, never save your password. Instead, IsoPass generate your passwords upon your requests with the master password provided. Since your passwords are never saved, they would never be stolen or leaked.  
+
+-----
 ## Features
 
 1. ### Irreversible master password
@@ -21,6 +25,9 @@ In cases where specific generated passwords are leaked and fallen into unwanted 
 
 2. ### No storage of sensitive information
 Insupass eliminates the need for storing password in a secure place. Insupass also eliminates the risk of password storage being compromised.   
+
+3. ### App-specific passwords
+For difference applications, IsoPass generate different passwords that are mathematically unrelated. Remembering only one master password, you can isolate your passwords. Have one million website logins to remember? No worry, IsoPass got you covered. You only need a master password.  
 
 -----
 ## Planed Features (to be implementer in future updates)
@@ -35,4 +42,4 @@ Application strings like ``gmail.com``, ``nyu.edu`` can be saved locally for use
 User can have multiple profile with different master passwords. Multiple profile ensures isolation between different applications and offers different level of security. For example, a user can have profiles for his finance, academic, social, nonessential and excreta applications. In such case the user may use easy-to-remember master password for his nonessential applications and type the master password more often on unsecured public computers, and he may use more complex master password for his finance application and type the password on computers with more security infrastructures.  
 
 1. ### Cloud sync of application strings and profiles  
-With our philosophy in mind, we aim to deliver secure and convenient password solution. Thus, non-sensitive data like application strings and profiles can be encrypted and synced through our server.
+Non-sensitive data like application strings and profiles can be encrypted and synced through our server.
