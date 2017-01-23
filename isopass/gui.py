@@ -3,7 +3,7 @@
 # Yu Gui    01/12/2017
 # NYU CIMS
 
-import hash
+from isopass import hash
 
 import tkinter
 from tkinter import messagebox
@@ -49,6 +49,3 @@ def gui_main():
     entry_app_pwd.focus()
 
     root.mainloop()
-
-#init GUI
-gui_main()
