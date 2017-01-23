@@ -9,3 +9,6 @@ from isopass import gui
 gui.gui_main()
 
 exit()
+
+
+# TODO: create unit tests

@@ -56,7 +56,7 @@ def base58_encode(str_input):
         i_code, i_remainder = divmod(i_code, 58)
         str_return += __str_code[i_remainder]
 
-    # reverse results of divmod
+    # reverse results of floor division to obtain final string
     str_temp = str_return[::-1]
     str_return = str_temp
 
@@ -64,6 +64,13 @@ def base58_encode(str_input):
         print('b58: ', str_return)
 
     return str_return
+
+
+# func: trim result string to specified length
+def trim_str(str_input, length=12):
+    str_result = str_input[:length]
+
+    return str_result
 
 
 # func: main hashing function
@@ -81,15 +88,13 @@ def run_hash(*args):
     print('Hashing algorithms: ', l_argv_algo)
     print('Encoding: ', l_argv_encode)
 
-    # TODO: create unit tests
-
     str_seed1 = args[0]
     str_seed2 = args[1]
 
     str_input = str_seed1 + str_seed2
     str_result = str_input
 
-    # define hashing algorithms
+    # parsing hash parameters
     for algo in l_argv_algo:
         # standard message digest algos
         if algo == "sha512":
@@ -142,6 +147,8 @@ def run_hash(*args):
     print('Digest: ', str_result)
     print('Length: ', len(str_result))
     print('\n')
+
+    str_result = trim_str(str_result)
 
     return str_result
 
