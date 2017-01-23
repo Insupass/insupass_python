@@ -1,11 +1,11 @@
-# ip_hashing.py
+# hash.py
 # hashing function of IsoPass
 # Yu Gui   01/12/2017
 # NYU CIMS
 
+import sys
 import math
 import hashlib
-import sys
 
 # global vars
 _ip_debug = True
