@@ -1,4 +1,4 @@
-# IsoPass Python  
+# IsoPass
 
 ## Introduction
 IsoPass is a secure password generator and manager. Given a input of a master password and a application string, IsoPass generate a app-specific password for the application.  
@@ -33,7 +33,7 @@ IsoPass eliminates the need for storing password in a secure place. IsoPass also
 For different applications, IsoPass generate different passwords that are mathematically unrelated. Remembering only one master password, you can isolate your passwords. Have one million website logins to remember? No worry, IsoPass got you covered. You only need a master password.  
 
 -----
-## Planed Features (to be implementer in future updates)
+## Planed Features (to be implemented in future updates)
 
 1. ### Native software on all mainstream platforms  
 IsoPass is designed to be undemanding on hardware and storage space, which means it is designed to be run on every mobile devices and computers. Linux, macOS, Windows, iOS, Android or even Web... Use IsoPass with the confidence that we got you covered whichever the device you are using.   

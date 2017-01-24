@@ -144,11 +144,12 @@ def run_hash(*args):
             str_input = str_result
             str_result = base58_encode(str_input)
 
+    # trim string to specified length
+    str_result = trim_str(str_result, 12)
+
     print('Digest: ', str_result)
     print('Length: ', len(str_result))
     print('\n')
-
-    str_result = trim_str(str_result)
 
     return str_result
 
