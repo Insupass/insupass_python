@@ -9,7 +9,7 @@ import tkinter
 from tkinter import messagebox
 
 
-def gui_main():
+def run():
     # func:
     # generate password by calling ip_hashing module
     # show password in a info message box

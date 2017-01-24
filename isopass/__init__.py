@@ -4,11 +4,4 @@
 from isopass import hash
 from isopass import gui
 
-
-# start GUI
-gui.gui_main()
-
-exit()
-
-
 # TODO: create unit tests
