@@ -3,8 +3,11 @@
 # Yu Gui    01/12/2017
 # NYU CIMS
 
+from . import hash
+
 import tkinter
 from tkinter import messagebox
+
 
 def run():
     # func:
