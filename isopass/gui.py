@@ -1,6 +1,6 @@
 # gui.py
-# GUI for IsoPass using tkinter
 # Yu Gui    01/12/2017
+# GUI for IsoPass using tkinter
 # NYU CIMS
 
 from . import hash
@@ -10,14 +10,13 @@ from tkinter import messagebox
 
 
 def run():
-    # func:
-    # generate password by calling ip_hashing module
+    # generate password by calling hash module
     # show password in a info message box
     def generate_pwd(*args):
         str_app_pwd = app_pwd.get()
         str_master_pwd = master_pwd.get()
         str_result = hash.run_hash(str_app_pwd, str_master_pwd)
-        messagebox.showinfo('Isopass', str_result)
+        messagebox.showinfo('IsoPass', str_result)
         return ()
 
     # create root window instance

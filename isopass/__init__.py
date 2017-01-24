@@ -3,5 +3,4 @@
 
 from . import hash
 from . import gui
-
-# TODO: create unit tests
+from . import cmd
