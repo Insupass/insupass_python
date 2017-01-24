@@ -3,7 +3,7 @@
 # Yu Gui    01/12/2017
 # NYU CIMS
 
-from isopass import hash
+from . import hash
 
 import tkinter
 from tkinter import messagebox
