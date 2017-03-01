@@ -1,15 +1,15 @@
 # gui.py
 # Yu Gui    01/12/2017
-# GUI for IsoPass using tkinter
+# Isopass
 # NYU CIMS
 
 from . import hash
 
-import tkinter
-from tkinter import messagebox
 
+def run_gui():
+    import tkinter
+    from tkinter import messagebox
 
-def run():
     # generate password by calling hash module
     # show password in a info message box
     def generate_pwd(*args):
@@ -48,3 +48,20 @@ def run():
     entry_app_pwd.focus()
 
     root.mainloop()
+
+
+def run_cli():
+    # generate password by calling hash module
+    # print password to shell
+    def generate_pwd(*args):
+        str_app_pwd = '123'
+        str_master_pwd = '123'
+        str_result = hash.run_hash(str_app_pwd, str_master_pwd)
+        print(str_result)
+        return ()
+
+    generate_pwd()
+
+    # TODO: write commandline mode
+
+    return ()
