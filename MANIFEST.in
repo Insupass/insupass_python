@@ -1,0 +1,6 @@
+isopass.py
+setup.py
+isopass/__init__.py
+isopass/isopass.py
+include isopass/hash/*.py
+
