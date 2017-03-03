@@ -8,9 +8,9 @@ setup(
     packages=['isopass'],
     scripts=['isopass.py'],
     url='http://pypi.python.org/pypi/IsoPass/',
-    license='LICENSE',
+    license='GPL v3',
     description='Isolated Secure Offline Password Manager',
-    long_description=open('README.md').read(),
+    long_description=open('README').read(),
     install_requires=[
     ],
 )
