@@ -15,7 +15,7 @@ Then you can use the generated output as your gmail.com login password.
 
 -----
 ## Philosophy
-IsoPass aim to be a secure and convenient password solution. IsoPass, as a password generator and manager, never save your password. Instead, IsoPass generate your passwords upon your requests with the master password provided. Since your passwords are never saved, they would never be stolen or leaked.  
+IsoPass aim to be a secure and convenient password solution. IsoPass, as a password generator and manager, never save your password. Instead, IsoPass generate your passwords upon your requests with the master password provided. The routine used by IsoPass to hash the input information is mathematically irreversible, so in any situation where the hash result may be compromised, the input can still be assumed secured. Since your passwords are never saved, they would never be stolen or leaked.  
 
 -----
 ## Features
