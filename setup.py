@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='IsoPass',
-    version='0.1.0',
+    version='0.1.1',
     author='Yu Gui',
     author_email='yugui923@gmail.com',
     packages=['isopass'],
